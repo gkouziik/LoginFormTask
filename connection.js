@@ -7,7 +7,6 @@ var connection = mysql.createConnection({
     password: process.env.password,
     database: process.env.database
 });
-console.log(connection)
 connection.connect((err) => {
     if (!err) {
         console.log('Connected');
